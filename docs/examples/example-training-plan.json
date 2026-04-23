@@ -1,0 +1,69 @@
+{
+  "id": "plan-half-marathon-foundation",
+  "userId": "user-maya",
+  "goalId": "goal-first-half",
+  "weekOf": "2026-04-27",
+  "headline": "Foundation week with one long run, two strength sessions, and protected mobility.",
+  "focus": [
+    "Maintain two easy-effort run exposures",
+    "Rebuild lower-body strength",
+    "Keep mobility visible after hard days"
+  ],
+  "sessions": [
+    {
+      "id": "session-1",
+      "day": "Monday",
+      "sessionType": "strength",
+      "title": "Upper Body Strength Builder",
+      "durationMinutes": 45,
+      "effort": "moderate",
+      "location": "gym",
+      "status": "scheduled"
+    },
+    {
+      "id": "session-2",
+      "day": "Tuesday",
+      "sessionType": "running",
+      "title": "Easy 6K with relaxed strides",
+      "durationMinutes": 40,
+      "effort": "easy",
+      "location": "outdoors",
+      "status": "scheduled"
+    },
+    {
+      "id": "session-3",
+      "day": "Thursday",
+      "sessionType": "mobility",
+      "title": "Hips, ankles, and thoracic reset",
+      "durationMinutes": 20,
+      "effort": "gentle",
+      "location": "home",
+      "status": "scheduled"
+    },
+    {
+      "id": "session-4",
+      "day": "Saturday",
+      "sessionType": "running",
+      "title": "Long run progression",
+      "durationMinutes": 70,
+      "effort": "steady",
+      "location": "outdoors",
+      "status": "scheduled"
+    },
+    {
+      "id": "session-5",
+      "day": "Sunday",
+      "sessionType": "strength",
+      "title": "Lower Body Stability Circuit",
+      "durationMinutes": 35,
+      "effort": "moderate",
+      "location": "home",
+      "status": "scheduled"
+    }
+  ],
+  "adjustmentRules": [
+    "If Tuesday run is missed, move it to Wednesday before removing mobility.",
+    "If long run is missed, shorten Sunday strength and move long run to Sunday morning.",
+    "Keep at least one recovery or mobility slot after the longest weekly session."
+  ]
+}

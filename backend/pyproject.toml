@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hoxa-backend"
+version = "0.1.0"
+description = "FastAPI backend scaffold for Hoxa."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.135.3,<0.136.0",
+  "uvicorn>=0.43.0,<0.44.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]

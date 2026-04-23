@@ -1,0 +1,16 @@
+[
+  {
+    "id": "user-maya",
+    "name": "Maya Thompson",
+    "streakDays": 12,
+    "primaryGoalId": "goal-first-half",
+    "weeklyAvailability": ["Mon", "Tue", "Thu", "Sat", "Sun"]
+  },
+  {
+    "id": "user-elliot",
+    "name": "Elliot Shaw",
+    "streakDays": 7,
+    "primaryGoalId": "goal-general-fitness",
+    "weeklyAvailability": ["Mon", "Wed", "Fri", "Sun"]
+  }
+]

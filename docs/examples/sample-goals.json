@@ -1,0 +1,38 @@
+[
+  {
+    "id": "goal-10k-pace",
+    "title": "Run a 10K at 5:25/km",
+    "goalType": "running",
+    "targetDate": "2026-09-20",
+    "weeklyMix": {
+      "running": 2,
+      "strength": 2,
+      "mobility": 1,
+      "recovery": 1
+    }
+  },
+  {
+    "id": "goal-first-half",
+    "title": "Complete a first half marathon",
+    "goalType": "half_marathon",
+    "targetDate": "2026-10-18",
+    "weeklyMix": {
+      "running": 3,
+      "strength": 2,
+      "mobility": 1,
+      "recovery": 1
+    }
+  },
+  {
+    "id": "goal-general-fitness",
+    "title": "Stay consistent with a balanced training week",
+    "goalType": "general_fitness",
+    "targetDate": null,
+    "weeklyMix": {
+      "running": 2,
+      "strength": 2,
+      "mobility": 1,
+      "recovery": 1
+    }
+  }
+]
