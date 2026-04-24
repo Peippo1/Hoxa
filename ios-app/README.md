@@ -1,35 +1,28 @@
-# Hoxa iOS App Scaffold
+# Hoxa iOS App
 
-This directory contains a SwiftUI-first source scaffold for the primary Hoxa experience.
+This directory now contains a runnable SwiftUI Xcode project for the primary Hoxa experience.
 
 ## What is included
 
+- `ios-app/Hoxa.xcodeproj` for opening in Xcode
 - app shell with `TabView`
-- top-level sections for `Plan`, `Train`, `Progress`, and `Social`
-- onboarding starter flow
-- mock data service
+- starter sections for `Plan`, `Train`, `Progress`, and `Social`
+- onboarding flow
+- mock-first data service
 - lightweight MVVM-style feature view models
-- integration-ready protocols for health and calendar providers
+- integration-ready protocols for future health and calendar providers
 - preview-friendly structure
 
-## Suggested Xcode Setup
+## How to Run
 
-1. Create a new iOS App target named `Hoxa`.
-2. Copy the contents of the `Hoxa/` directory into the Xcode project.
-3. Set the deployment target to iOS 17 or later to use Observation cleanly.
-4. Add an app icon and launch screen assets.
-5. Replace the mock service with real repositories and API clients over time.
+1. Open `ios-app/Hoxa.xcodeproj` in Xcode.
+2. Select the `Hoxa` scheme.
+3. Run on an iPhone simulator or device.
 
-## Architecture Notes
+## Notes
 
+- The project targets iOS 17+.
 - `AppModel` owns app-level state such as onboarding completion and selected goal.
 - feature view models keep screen-specific shaping logic out of the views
-- views stay small and focused
-- external integrations are represented as protocols so HealthKit and calendar work can slot in later without changing feature views
-
-## Future Work
-
-- create a full `.xcodeproj`
-- add HealthKit adapter and permission flow
-- add async API client
-- add design assets and app icons
+- external integrations are still placeholder protocols, so HealthKit and calendar work can be added later without changing the feature UI
+- mock data remains the default so the app is usable without a backend

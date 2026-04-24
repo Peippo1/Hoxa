@@ -41,7 +41,7 @@ hoxa/
 ├── backend/         FastAPI scaffold for plans, workouts, progress, social, and integrations
 ├── design/          Brand tokens and design references
 ├── docs/            Product thinking, architecture, personas, and integration plans
-├── ios-app/         SwiftUI source scaffold for the primary app
+├── ios-app/         Runnable SwiftUI Xcode project for the primary app
 ├── marketing-site/  Future marketing surface placeholder
 └── web-app/         Next.js companion experience for planning, dashboard, and social
 ```
@@ -130,7 +130,7 @@ See [`backend/README.md`](./backend/README.md) and [`backend/.env.example`](./ba
 
 ### iOS app
 
-The iOS directory contains a SwiftUI app source scaffold and product structure ready to move into an Xcode app target. See [`ios-app/README.md`](./ios-app/README.md).
+The iOS directory contains a runnable SwiftUI Xcode project. Open [`ios-app/Hoxa.xcodeproj`](./ios-app/Hoxa.xcodeproj) and see [`ios-app/README.md`](./ios-app/README.md) for the quickest way to run it.
 
 ## Documentation
 

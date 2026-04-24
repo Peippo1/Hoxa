@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+	B7C2CD4DC95F78B68699AC82 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F11E1472B40984C3DCBFA /* AppModel.swift */; };
+	05A3C03AF5ACECCF08C54A73 /* HoxaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1447B9640DBE046F895AD542 /* HoxaApp.swift */; };
+	6DDF68EC1FE667F2BE5BA19A /* HoxaRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7583559F49539AE999F0FEA /* HoxaRootView.swift */; };
+	DFEAE0F2C5FAC48A149D7B5B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD860A3DB910D41CC668779 /* OnboardingView.swift */; };
+	B9716E7EBF01964889DAE56F /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49404E583FDFA6B8BF11CF9E /* OnboardingViewModel.swift */; };
+	17190E7F3DEFAF15B5B2540A /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52510F84945660EC1171AB3E /* PlanView.swift */; };
+	285958540734CB9DE13F23AE /* PlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BE63F5444DDF0403B2D2A5 /* PlanViewModel.swift */; };
+	3BB704948A12CAF77E0D3F44 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D59A37DFC585319F110AB04 /* ProgressView.swift */; };
+	1F8D7174216ABA50E8BB6977 /* ProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D01739F9DB2215BEFD76E0 /* ProgressViewModel.swift */; };
+	FBDDAE61A883F62613CA8D1C /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC248E024BD6767A93F7D18 /* SocialView.swift */; };
+	3643C67C28F857444353B3E6 /* SocialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001070EA32E6CA336D3C8AA3 /* SocialViewModel.swift */; };
+	0E1086200B09425E8F0A3711 /* TrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C9FACC1392C528B0CEE2F5 /* TrainView.swift */; };
+	B5EB4927DF530696367A483C /* TrainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36C50D1F156366919AB21AB /* TrainViewModel.swift */; };
+	16FA211386F7E47E92751AB2 /* FollowingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038EAFCC4D8A2C8376D03CA4 /* FollowingProfile.swift */; };
+	8B97832FE87521868E94B0E8 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F625CA3E3C6436AC5F1C132 /* Goal.swift */; };
+	7E6EB092203F686008E8167E /* OnboardingQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EB3C6D41CBCE174A059472 /* OnboardingQuestion.swift */; };
+	2A8815CBC81DA91A9B626206 /* ProgressMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D40C0BEEF1795C046FB148 /* ProgressMetric.swift */; };
+	1156FD30882053DFFD28639A /* ProgressNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735EC9C6A83705E7801026DC /* ProgressNote.swift */; };
+	EC80509E7E529C48725A1B74 /* SocialActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3A6F9C3A3C248400AD8FA0 /* SocialActivity.swift */; };
+	C112DA99FA09733E3D04D7CC /* TrainingBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5887EFAD7D33EDE8721FB7A /* TrainingBlock.swift */; };
+	62600460EDA14B29F3445488 /* TrainingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C4ECA25B11D43C3ED977BB /* TrainingSession.swift */; };
+	394BB0AE7B28533B03F67C25 /* WorkoutTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0212529B4E95D51B21C893D2 /* WorkoutTemplate.swift */; };
+	D1C029C3F519147B236617DB /* IntegrationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F95B8475F932CAE9244F98 /* IntegrationProtocols.swift */; };
+	7A006F2AD729B2F241B7B41A /* MockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DA4D6EF2A1AEC72B9232AA /* MockDataService.swift */; };
+	69AD86E3E16F6FECB76BECF7 /* HoxaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B803DD28EDCB5A44E05D14E /* HoxaCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+	500F11E1472B40984C3DCBFA /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+	1447B9640DBE046F895AD542 /* HoxaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoxaApp.swift; sourceTree = "<group>"; };
+	E7583559F49539AE999F0FEA /* HoxaRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoxaRootView.swift; sourceTree = "<group>"; };
+	8BD860A3DB910D41CC668779 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+	49404E583FDFA6B8BF11CF9E /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+	52510F84945660EC1171AB3E /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
+	C5BE63F5444DDF0403B2D2A5 /* PlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewModel.swift; sourceTree = "<group>"; };
+	5D59A37DFC585319F110AB04 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+	74D01739F9DB2215BEFD76E0 /* ProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewModel.swift; sourceTree = "<group>"; };
+	6AC248E024BD6767A93F7D18 /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
+	001070EA32E6CA336D3C8AA3 /* SocialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewModel.swift; sourceTree = "<group>"; };
+	B4C9FACC1392C528B0CEE2F5 /* TrainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainView.swift; sourceTree = "<group>"; };
+	C36C50D1F156366919AB21AB /* TrainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewModel.swift; sourceTree = "<group>"; };
+	038EAFCC4D8A2C8376D03CA4 /* FollowingProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowingProfile.swift; sourceTree = "<group>"; };
+	9F625CA3E3C6436AC5F1C132 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+	E6EB3C6D41CBCE174A059472 /* OnboardingQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingQuestion.swift; sourceTree = "<group>"; };
+	B4D40C0BEEF1795C046FB148 /* ProgressMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMetric.swift; sourceTree = "<group>"; };
+	735EC9C6A83705E7801026DC /* ProgressNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressNote.swift; sourceTree = "<group>"; };
+	7C3A6F9C3A3C248400AD8FA0 /* SocialActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialActivity.swift; sourceTree = "<group>"; };
+	C5887EFAD7D33EDE8721FB7A /* TrainingBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingBlock.swift; sourceTree = "<group>"; };
+	C1C4ECA25B11D43C3ED977BB /* TrainingSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingSession.swift; sourceTree = "<group>"; };
+	0212529B4E95D51B21C893D2 /* WorkoutTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTemplate.swift; sourceTree = "<group>"; };
+	C6F95B8475F932CAE9244F98 /* IntegrationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationProtocols.swift; sourceTree = "<group>"; };
+	17DA4D6EF2A1AEC72B9232AA /* MockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataService.swift; sourceTree = "<group>"; };
+	7B803DD28EDCB5A44E05D14E /* HoxaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoxaCard.swift; sourceTree = "<group>"; };
+	57243D918609FD8F410B959B /* Hoxa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hoxa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+	0CCA4836ED8AD193CC12F1FB /* Hoxa */ = {
+		isa = PBXGroup;
+		children = (
+			3A3E77C027C4F289628561E9 /* App */,
+			FA3564433AD003302E7183BB /* Features */,
+			139A278E2745B2E0335B7DD1 /* Models */,
+			19C7A68B149A365FF96EB595 /* Services */,
+			4F46A2E684F5BB112F0DB6D4 /* Shared */,
+			E8AA89248CB4F25BFC74C885 /* Products */,
+		);
+		path = Hoxa;
+		sourceTree = "<group>";
+	};
+	3A3E77C027C4F289628561E9 /* App */ = {
+		isa = PBXGroup;
+		children = (
+			500F11E1472B40984C3DCBFA /* AppModel.swift */,
+			1447B9640DBE046F895AD542 /* HoxaApp.swift */,
+			E7583559F49539AE999F0FEA /* HoxaRootView.swift */,
+		);
+		path = App;
+		sourceTree = "<group>";
+	};
+	FA3564433AD003302E7183BB /* Features */ = {
+		isa = PBXGroup;
+		children = (
+			6938746F0BB5D292B1564CAF /* Onboarding */,
+			368F1D25F8E562653021DFBA /* Plan */,
+			1A57769BDD64E15AC9950418 /* Progress */,
+			1E4FA8E3ED0D7ACACE726AEF /* Social */,
+			CAFB6EECA9EDBCF12DD51B19 /* Train */,
+		);
+		path = Features;
+		sourceTree = "<group>";
+	};
+	6938746F0BB5D292B1564CAF /* Onboarding */ = {
+		isa = PBXGroup;
+		children = (
+			8BD860A3DB910D41CC668779 /* OnboardingView.swift */,
+			C0A9A0A8F8454A0A8A65D2B1 /* ViewModels */,
+		);
+		path = Onboarding;
+		sourceTree = "<group>";
+	};
+	C0A9A0A8F8454A0A8A65D2B1 /* ViewModels */ = {
+		isa = PBXGroup;
+		children = (
+			49404E583FDFA6B8BF11CF9E /* OnboardingViewModel.swift */,
+		);
+		path = ViewModels;
+		sourceTree = "<group>";
+	};
+	368F1D25F8E562653021DFBA /* Plan */ = {
+		isa = PBXGroup;
+		children = (
+			52510F84945660EC1171AB3E /* PlanView.swift */,
+			5C2F11A4E0F84A8AB6A9F5C2 /* ViewModels */,
+		);
+		path = Plan;
+		sourceTree = "<group>";
+	};
+	5C2F11A4E0F84A8AB6A9F5C2 /* ViewModels */ = {
+		isa = PBXGroup;
+		children = (
+			C5BE63F5444DDF0403B2D2A5 /* PlanViewModel.swift */,
+		);
+		path = ViewModels;
+		sourceTree = "<group>";
+	};
+	1A57769BDD64E15AC9950418 /* Progress */ = {
+		isa = PBXGroup;
+		children = (
+			5D59A37DFC585319F110AB04 /* ProgressView.swift */,
+			9D5CF66E23E44867A9C61A16 /* ViewModels */,
+		);
+		path = Progress;
+		sourceTree = "<group>";
+	};
+	9D5CF66E23E44867A9C61A16 /* ViewModels */ = {
+		isa = PBXGroup;
+		children = (
+			74D01739F9DB2215BEFD76E0 /* ProgressViewModel.swift */,
+		);
+		path = ViewModels;
+		sourceTree = "<group>";
+	};
+	1E4FA8E3ED0D7ACACE726AEF /* Social */ = {
+		isa = PBXGroup;
+		children = (
+			6AC248E024BD6767A93F7D18 /* SocialView.swift */,
+			7B1EDC3B1F2B4B9C8E4F4A38 /* ViewModels */,
+		);
+		path = Social;
+		sourceTree = "<group>";
+	};
+	7B1EDC3B1F2B4B9C8E4F4A38 /* ViewModels */ = {
+		isa = PBXGroup;
+		children = (
+			001070EA32E6CA336D3C8AA3 /* SocialViewModel.swift */,
+		);
+		path = ViewModels;
+		sourceTree = "<group>";
+	};
+	CAFB6EECA9EDBCF12DD51B19 /* Train */ = {
+		isa = PBXGroup;
+		children = (
+			B4C9FACC1392C528B0CEE2F5 /* TrainView.swift */,
+			8E89F27E34B5419D9DF3F7B2 /* ViewModels */,
+		);
+		path = Train;
+		sourceTree = "<group>";
+	};
+	8E89F27E34B5419D9DF3F7B2 /* ViewModels */ = {
+		isa = PBXGroup;
+		children = (
+			C36C50D1F156366919AB21AB /* TrainViewModel.swift */,
+		);
+		path = ViewModels;
+		sourceTree = "<group>";
+	};
+	139A278E2745B2E0335B7DD1 /* Models */ = {
+		isa = PBXGroup;
+		children = (
+			038EAFCC4D8A2C8376D03CA4 /* FollowingProfile.swift */,
+			9F625CA3E3C6436AC5F1C132 /* Goal.swift */,
+			E6EB3C6D41CBCE174A059472 /* OnboardingQuestion.swift */,
+			B4D40C0BEEF1795C046FB148 /* ProgressMetric.swift */,
+			735EC9C6A83705E7801026DC /* ProgressNote.swift */,
+			7C3A6F9C3A3C248400AD8FA0 /* SocialActivity.swift */,
+			C5887EFAD7D33EDE8721FB7A /* TrainingBlock.swift */,
+			C1C4ECA25B11D43C3ED977BB /* TrainingSession.swift */,
+			0212529B4E95D51B21C893D2 /* WorkoutTemplate.swift */,
+		);
+		path = Models;
+		sourceTree = "<group>";
+	};
+	19C7A68B149A365FF96EB595 /* Services */ = {
+		isa = PBXGroup;
+		children = (
+			C6F95B8475F932CAE9244F98 /* IntegrationProtocols.swift */,
+			17DA4D6EF2A1AEC72B9232AA /* MockDataService.swift */,
+		);
+		path = Services;
+		sourceTree = "<group>";
+	};
+	4F46A2E684F5BB112F0DB6D4 /* Shared */ = {
+		isa = PBXGroup;
+		children = (
+			7B803DD28EDCB5A44E05D14E /* HoxaCard.swift */,
+		);
+		path = Shared;
+		sourceTree = "<group>";
+	};
+	E8AA89248CB4F25BFC74C885 /* Products */ = {
+		isa = PBXGroup;
+		children = (
+			57243D918609FD8F410B959B /* Hoxa.app */,
+		);
+		path = Products;
+		sourceTree = "<group>";
+	};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+	F15FAA45A19FE7027B7491C7 /* Hoxa */ = {
+		isa = PBXNativeTarget;
+		buildConfigurationList = 6D9056A456F0E4B8D7AE6648 /* Build configuration list for PBXNativeTarget "Hoxa" */;
+		buildPhases = (
+			8C66058FAF04D0C4F05FA07C /* Sources */,
+			DE57029216B11D7047430FB4 /* Frameworks */,
+			FE78D16369627995696834B5 /* Resources */,
+		);
+		buildRules = (
+		);
+		dependencies = (
+		);
+		name = Hoxa;
+		productName = Hoxa;
+		productReference = 57243D918609FD8F410B959B /* Hoxa.app */;
+		productType = "com.apple.product-type.application";
+	};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+	C051831C1E1D107AC6FC7009 /* Project object */ = {
+		isa = PBXProject;
+		attributes = {
+			LastSwiftUpdateCheck = 1600;
+			LastUpgradeCheck = 1600;
+			TargetAttributes = {
+				F15FAA45A19FE7027B7491C7 = {
+					CreatedOnToolsVersion = 16.0;
+				};
+			};
+		};
+		buildConfigurationList = BF37C6891A181C21CF1C0B57 /* Build configuration list for PBXProject "Hoxa" */;
+		compatibilityVersion = "Xcode 16.0";
+		developmentRegion = en;
+		hasScannedForEncodings = 0;
+		knownRegions = (
+			en,
+			Base,
+		);
+		mainGroup = 0CCA4836ED8AD193CC12F1FB /* Hoxa */;
+		minimizedProjectReferenceProxies = 1;
+		preferredProjectObjectVersion = 56;
+		productRefGroup = E8AA89248CB4F25BFC74C885 /* Products */;
+		projectDirPath = "";
+		projectRoot = "";
+		targets = (
+			F15FAA45A19FE7027B7491C7 /* Hoxa */,
+		);
+	};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+	FE78D16369627995696834B5 /* Resources */ = {
+		isa = PBXResourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+	8C66058FAF04D0C4F05FA07C /* Sources */ = {
+		isa = PBXSourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			B7C2CD4DC95F78B68699AC82 /* AppModel.swift in Sources */,
+			05A3C03AF5ACECCF08C54A73 /* HoxaApp.swift in Sources */,
+			6DDF68EC1FE667F2BE5BA19A /* HoxaRootView.swift in Sources */,
+			DFEAE0F2C5FAC48A149D7B5B /* OnboardingView.swift in Sources */,
+			B9716E7EBF01964889DAE56F /* OnboardingViewModel.swift in Sources */,
+			17190E7F3DEFAF15B5B2540A /* PlanView.swift in Sources */,
+			285958540734CB9DE13F23AE /* PlanViewModel.swift in Sources */,
+			3BB704948A12CAF77E0D3F44 /* ProgressView.swift in Sources */,
+			1F8D7174216ABA50E8BB6977 /* ProgressViewModel.swift in Sources */,
+			FBDDAE61A883F62613CA8D1C /* SocialView.swift in Sources */,
+			3643C67C28F857444353B3E6 /* SocialViewModel.swift in Sources */,
+			0E1086200B09425E8F0A3711 /* TrainView.swift in Sources */,
+			B5EB4927DF530696367A483C /* TrainViewModel.swift in Sources */,
+			16FA211386F7E47E92751AB2 /* FollowingProfile.swift in Sources */,
+			8B97832FE87521868E94B0E8 /* Goal.swift in Sources */,
+			7E6EB092203F686008E8167E /* OnboardingQuestion.swift in Sources */,
+			2A8815CBC81DA91A9B626206 /* ProgressMetric.swift in Sources */,
+			1156FD30882053DFFD28639A /* ProgressNote.swift in Sources */,
+			EC80509E7E529C48725A1B74 /* SocialActivity.swift in Sources */,
+			C112DA99FA09733E3D04D7CC /* TrainingBlock.swift in Sources */,
+			62600460EDA14B29F3445488 /* TrainingSession.swift in Sources */,
+			394BB0AE7B28533B03F67C25 /* WorkoutTemplate.swift in Sources */,
+			D1C029C3F519147B236617DB /* IntegrationProtocols.swift in Sources */,
+			7A006F2AD729B2F241B7B41A /* MockDataService.swift in Sources */,
+			69AD86E3E16F6FECB76BECF7 /* HoxaCard.swift in Sources */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+	DE57029216B11D7047430FB4 /* Frameworks */ = {
+		isa = PBXFrameworksBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+	26BB241639C5AB18F6566C02 /* Debug */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+			CLANG_WARN_BOOL_CONVERSION = YES;
+			CLANG_WARN_COMMA = YES;
+			CLANG_WARN_CONSTANT_CONVERSION = YES;
+			CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+			CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+			CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+			CLANG_WARN_EMPTY_BODY = YES;
+			CLANG_WARN_ENUM_CONVERSION = YES;
+			CLANG_WARN_INFINITE_RECURSION = YES;
+			CLANG_WARN_INT_CONVERSION = YES;
+			CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+			CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+			CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+			CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+			CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+			CLANG_WARN_STRICT_PROTOTYPES = YES;
+			CLANG_WARN_SUSPICIOUS_MOVE = YES;
+			CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+			CODE_SIGNING_ALLOWED = NO;
+			CODE_SIGNING_REQUIRED = NO;
+			COPY_PHASE_STRIP = NO;
+			DEBUG_INFORMATION_FORMAT = dwarf;
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = Hoxa;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+			ONLY_ACTIVE_ARCH = YES;
+			PRODUCT_BUNDLE_IDENTIFIER = com.hoxa.iosapp;
+			PRODUCT_NAME = Hoxa;
+			SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_OPTIMIZATION_LEVEL = -Onone;
+			SWIFT_VERSION = 5.0;
+			SDKROOT = iphoneos;
+			SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			TARGETED_DEVICE_FAMILY = 1;
+		};
+		name = Debug;
+	};
+	24BE3A2A6B50A34553ACA62D /* Release */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+			CLANG_WARN_BOOL_CONVERSION = YES;
+			CLANG_WARN_COMMA = YES;
+			CLANG_WARN_CONSTANT_CONVERSION = YES;
+			CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+			CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+			CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+			CLANG_WARN_EMPTY_BODY = YES;
+			CLANG_WARN_ENUM_CONVERSION = YES;
+			CLANG_WARN_INFINITE_RECURSION = YES;
+			CLANG_WARN_INT_CONVERSION = YES;
+			CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+			CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+			CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+			CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+			CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+			CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+			CLANG_WARN_STRICT_PROTOTYPES = YES;
+			CLANG_WARN_SUSPICIOUS_MOVE = YES;
+			CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+			CODE_SIGNING_ALLOWED = NO;
+			CODE_SIGNING_REQUIRED = NO;
+			COPY_PHASE_STRIP = YES;
+			DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = Hoxa;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			MTL_ENABLE_DEBUG_INFO = NO;
+			PRODUCT_BUNDLE_IDENTIFIER = com.hoxa.iosapp;
+			PRODUCT_NAME = Hoxa;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 5.0;
+			SDKROOT = iphoneos;
+			SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			TARGETED_DEVICE_FAMILY = 1;
+		};
+		name = Release;
+	};
+	F775B38BEEBDA1A10A53E348 /* Debug */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ENABLE_MODULES = YES;
+			CODE_SIGNING_ALLOWED = NO;
+			CODE_SIGNING_REQUIRED = NO;
+			COPY_PHASE_STRIP = NO;
+			DEBUG_INFORMATION_FORMAT = dwarf;
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = Hoxa;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+			ONLY_ACTIVE_ARCH = YES;
+			PRODUCT_BUNDLE_IDENTIFIER = com.hoxa.iosapp;
+			PRODUCT_NAME = Hoxa;
+			SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_OPTIMIZATION_LEVEL = -Onone;
+			SWIFT_VERSION = 5.0;
+			SDKROOT = iphoneos;
+			SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			TARGETED_DEVICE_FAMILY = 1;
+		};
+		name = Debug;
+	};
+	BC865CE302E81C89DBDF78B4 /* Release */ = {
+		isa = XCBuildConfiguration;
+		buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ENABLE_MODULES = YES;
+			CODE_SIGNING_ALLOWED = NO;
+			CODE_SIGNING_REQUIRED = NO;
+			COPY_PHASE_STRIP = YES;
+			DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			ENABLE_PREVIEWS = YES;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = Hoxa;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			MTL_ENABLE_DEBUG_INFO = NO;
+			PRODUCT_BUNDLE_IDENTIFIER = com.hoxa.iosapp;
+			PRODUCT_NAME = Hoxa;
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 5.0;
+			SDKROOT = iphoneos;
+			SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			TARGETED_DEVICE_FAMILY = 1;
+		};
+		name = Release;
+	};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+	BF37C6891A181C21CF1C0B57 /* Build configuration list for PBXProject "Hoxa" */ = {
+		isa = XCConfigurationList;
+		buildConfigurations = (
+			26BB241639C5AB18F6566C02 /* Debug */,
+			24BE3A2A6B50A34553ACA62D /* Release */,
+		);
+		defaultConfigurationIsVisible = 0;
+		defaultConfigurationName = Release;
+	};
+	6D9056A456F0E4B8D7AE6648 /* Build configuration list for PBXNativeTarget "Hoxa" */ = {
+		isa = XCConfigurationList;
+		buildConfigurations = (
+			F775B38BEEBDA1A10A53E348 /* Debug */,
+			BC865CE302E81C89DBDF78B4 /* Release */,
+		);
+		defaultConfigurationIsVisible = 0;
+		defaultConfigurationName = Release;
+	};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = C051831C1E1D107AC6FC7009 /* Project object */;
+}
