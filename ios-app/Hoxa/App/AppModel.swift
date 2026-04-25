@@ -1,35 +1,71 @@
+import Combine
 import Foundation
-import Observation
 
-@Observable
-final class AppModel {
-    var selectedGoal: Goal
-    var goals: [Goal]
-    var onboardingQuestions: [OnboardingQuestion]
-    var trainingBlocks: [TrainingBlock]
-    var weeklyPlan: [TrainingSession]
-    var workoutLibrary: [WorkoutTemplate]
-    var progressMetrics: [ProgressMetric]
-    var progressNotes: [ProgressNote]
-    var socialActivities: [SocialActivity]
-    var followingProfiles: [FollowingProfile]
-    var onboardingCompleted = false
+final class AppModel: ObservableObject {
+    let journey: DemoJourney
+    @Published var onboardingCompleted = false
 
     init(service: MockDataProviding = MockDataService()) {
-        let goals = service.goals()
-        self.goals = goals
-        self.selectedGoal = goals.first ?? Goal.example
-        self.onboardingQuestions = service.onboardingQuestions()
-        self.trainingBlocks = service.trainingBlocks()
-        self.weeklyPlan = service.weeklyPlan()
-        self.workoutLibrary = service.workoutLibrary()
-        self.progressMetrics = service.progressMetrics()
-        self.progressNotes = service.progressNotes()
-        self.socialActivities = service.socialActivities()
-        self.followingProfiles = service.followingProfiles()
+        self.journey = service.journey()
+    }
+
+    var currentUser: DemoUser {
+        journey.currentUser
+    }
+
+    var selectedGoal: Goal {
+        journey.activeGoal
+    }
+
+    var goals: [Goal] {
+        journey.goalOptions
+    }
+
+    var onboardingQuestions: [OnboardingQuestion] {
+        journey.onboardingQuestions
+    }
+
+    var trainingBlocks: [TrainingBlock] {
+        journey.trainingBlocks
+    }
+
+    var weeklyPlan: [TrainingSession] {
+        journey.weeklyPlan
+    }
+
+    var workoutLibrary: [WorkoutTemplate] {
+        journey.workoutLibrary
+    }
+
+    var workoutDetail: DemoWorkoutDetail {
+        journey.workoutDetail
+    }
+
+    var progressMetrics: [ProgressMetric] {
+        journey.progressMetrics
+    }
+
+    var progressNotes: [ProgressNote] {
+        journey.progressNotes
+    }
+
+    var progressSummary: DemoProgressSummary {
+        journey.progressSummary
+    }
+
+    var socialActivities: [SocialActivity] {
+        journey.socialActivities
+    }
+
+    var followingProfiles: [FollowingProfile] {
+        journey.followingProfiles
+    }
+
+    var socialSummary: DemoSocialSummary {
+        journey.socialSummary
     }
 
     var todaySession: TrainingSession {
-        weeklyPlan.first(where: { $0.status == .today }) ?? weeklyPlan.first ?? .example
+        journey.todaySession
     }
 }

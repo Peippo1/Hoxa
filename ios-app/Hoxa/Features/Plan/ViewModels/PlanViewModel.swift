@@ -3,6 +3,10 @@ import Foundation
 struct PlanViewModel {
     let appModel: AppModel
 
+    var currentUser: DemoUser {
+        appModel.currentUser
+    }
+
     var selectedGoal: Goal {
         appModel.selectedGoal
     }

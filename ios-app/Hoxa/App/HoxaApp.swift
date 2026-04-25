@@ -2,7 +2,7 @@ import SwiftUI
 
 @main
 struct HoxaApp: App {
-    @State private var appModel = AppModel()
+    @StateObject private var appModel = AppModel()
 
     var body: some Scene {
         WindowGroup {

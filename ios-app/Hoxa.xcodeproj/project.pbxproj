@@ -31,6 +31,8 @@
 	D1C029C3F519147B236617DB /* IntegrationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F95B8475F932CAE9244F98 /* IntegrationProtocols.swift */; };
 	7A006F2AD729B2F241B7B41A /* MockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DA4D6EF2A1AEC72B9232AA /* MockDataService.swift */; };
 	69AD86E3E16F6FECB76BECF7 /* HoxaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B803DD28EDCB5A44E05D14E /* HoxaCard.swift */; };
+	6F1B7A0E2D3C4F5A6B7C8D90 /* StateViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D7E8F901A2B3C4D5E6F70 /* StateViews.swift */; };
+	1C2D3E4F5061728394A5B6C7 /* DemoJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9B0C1D2E3F405162738495 /* DemoJourney.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 	C6F95B8475F932CAE9244F98 /* IntegrationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationProtocols.swift; sourceTree = "<group>"; };
 	17DA4D6EF2A1AEC72B9232AA /* MockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataService.swift; sourceTree = "<group>"; };
 	7B803DD28EDCB5A44E05D14E /* HoxaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoxaCard.swift; sourceTree = "<group>"; };
+	5C6D7E8F901A2B3C4D5E6F70 /* StateViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViews.swift; sourceTree = "<group>"; };
+	8A9B0C1D2E3F405162738495 /* DemoJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoJourney.swift; sourceTree = "<group>"; };
 	57243D918609FD8F410B959B /* Hoxa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hoxa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -212,6 +216,8 @@
 		isa = PBXGroup;
 		children = (
 			7B803DD28EDCB5A44E05D14E /* HoxaCard.swift */,
+			5C6D7E8F901A2B3C4D5E6F70 /* StateViews.swift */,
+			8A9B0C1D2E3F405162738495 /* DemoJourney.swift */,
 		);
 		path = Shared;
 		sourceTree = "<group>";
@@ -318,6 +324,8 @@
 			D1C029C3F519147B236617DB /* IntegrationProtocols.swift in Sources */,
 			7A006F2AD729B2F241B7B41A /* MockDataService.swift in Sources */,
 			69AD86E3E16F6FECB76BECF7 /* HoxaCard.swift in Sources */,
+			6F1B7A0E2D3C4F5A6B7C8D90 /* StateViews.swift in Sources */,
+			1C2D3E4F5061728394A5B6C7 /* DemoJourney.swift in Sources */,
 		);
 		runOnlyForDeploymentPostprocessing = 0;
 	};

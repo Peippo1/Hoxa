@@ -6,6 +6,8 @@ The product is designed around a single idea: people rarely train for just one m
 
 This repo is intentionally scoped as a portfolio-quality MVP foundation: polished enough to feel like a real product, simple enough for a solo developer to evolve.
 
+Current status: the iOS app has a runnable Xcode project and now builds successfully. Hoxa is in product-hardening mode with reusable empty, loading, and error states, one shared `DemoJourney` source of truth, and a calm portfolio demo flow built entirely on mock data. The app still has no real integrations.
+
 ## What Hoxa Is
 
 - an adaptive training planner
@@ -58,11 +60,11 @@ hoxa/
 
 The current repository is centred on five practical outcomes:
 
-1. polished starter UI
-2. clear docs
-3. believable mock data
-4. good architecture
-5. future-ready integration points
+1. a polished, demo-ready iOS experience
+2. a single shared mock journey across the main screens
+3. clear, public-safe documentation and repo structure
+4. lightweight local state for adaptive training interactions
+5. future-ready integration seams without shipping real APIs yet
 
 ## MVP Scope
 
@@ -71,10 +73,10 @@ The current scaffold prioritises:
 - onboarding and goal selection
 - adaptive weekly training calendar
 - workout library and session details
-- manual workout logging
 - progress dashboards
 - lightweight social features like follows and props
-- integration-ready architecture for Apple Health and calendar syncing
+- local-only training adjustments and fallback states
+- integration-ready architecture for future Apple Health and calendar syncing
 
 ## Example User Goals
 
@@ -151,13 +153,28 @@ The iOS directory contains a runnable SwiftUI Xcode project. Open [`ios-app/Hoxa
 - route and feature structure aligned to `Plan`, `Train`, `Progress`, and `Social`
 - docs updated alongside major scaffolding changes
 
+## Current iOS Demo Journey
+
+The current portfolio demo path is:
+
+1. Onboarding introduces Avery Chen and the 10K target.
+2. Plan shows the week, the shared goal, and a local missed-session adjustment flow.
+3. Train shows the session detail for the current workout.
+4. Progress summarizes recent consistency and progress.
+5. Social closes the loop with friends, props, and encouragement.
+
 ## Next Steps
 
-Short-term product and engineering tasks:
+1. Keep the shared mock journey aligned across any new screens or copy changes.
+2. Add placeholder states only where the UI can still genuinely be empty or delayed.
+3. Polish the adaptive Plan flow and related demo copy where it improves clarity.
+4. Add lightweight auth/profile scaffolding only if it supports the portfolio story.
+5. Leave real Apple Health, calendar, Garmin, and backend integrations for later.
 
-1. Convert the SwiftUI source scaffold into a full Xcode project.
-2. Replace duplicated mock data with shared contracts from the backend.
-3. Add real empty, loading, and error flows once backend integration starts.
-4. Implement first-pass adaptive plan rules for missed sessions and schedule constraints.
-5. Add placeholder auth and user profile scaffolding.
-6. Start integration adapters for Apple Health and calendar availability.
+## Working Notes
+
+- The project is still an MVP foundation, not a production fitness platform.
+- Mock data remains acceptable where it supports a believable demo.
+- Shared contracts should gradually replace duplicated mock structures.
+- Documentation should stay close to the actual build state.
+- Keep development lightweight and easy to reason about on a MacBook Air-class machine.

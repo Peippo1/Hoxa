@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct HoxaRootView: View {
-    let appModel: AppModel
+    @ObservedObject var appModel: AppModel
 
     var body: some View {
         if appModel.onboardingCompleted {
@@ -33,6 +33,10 @@ struct HoxaRootView: View {
     }
 }
 
-#Preview {
-    HoxaRootView(appModel: AppModel())
+#if DEBUG
+struct HoxaRootView_Previews: PreviewProvider {
+    static var previews: some View {
+        HoxaRootView(appModel: AppModel())
+    }
 }
+#endif

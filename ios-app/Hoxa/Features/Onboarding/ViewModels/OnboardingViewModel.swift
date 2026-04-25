@@ -4,14 +4,22 @@ struct OnboardingViewModel {
     let appModel: AppModel
 
     var title: String {
-        "Start with a goal, your current level, and the constraints that shape real life."
+        "Start with a clear goal, a realistic week, and the constraints that shape real life."
+    }
+
+    var currentUser: DemoUser {
+        appModel.currentUser
+    }
+
+    var activeGoal: Goal {
+        appModel.selectedGoal
     }
 
     var questions: [OnboardingQuestion] {
         appModel.onboardingQuestions
     }
 
-    var goals: [Goal] {
+    var goalOptions: [Goal] {
         appModel.goals
     }
 }
